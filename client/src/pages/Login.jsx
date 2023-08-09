@@ -36,7 +36,7 @@ const Login = () => {
     return (
         <Wrapper>
             <Form method="post" className="form">
-                <Logo />
+                <Logo isLandingPage />
                 <h4>login</h4>
                 <FormRow type="email" name="email" />
                 <FormRow type="password" name="password" />
