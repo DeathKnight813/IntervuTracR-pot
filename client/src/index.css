@@ -513,8 +513,8 @@ button:disabled {
 .dark-theme .large-shadow::before {
   content: '';
   position: absolute;
-  top: 55%;
-  left: 0%;
+  top: 70%;
+  left: -15%;
   width: 50%;
   height: 50%;
   border-radius: 100vh;
@@ -539,7 +539,7 @@ button:disabled {
   transform: translateY(-50%);
   background-color: white;
   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  filter: blur(150px);
+  filter: blur(50px);
 
   z-index: -1;
 }
@@ -556,7 +556,7 @@ button:disabled {
 
   transform: translate(-50%, -50%);
   background-color: white;
-  filter: blur(250px);
+  filter: blur(300px);
 
   z-index: -1;
 }
