@@ -100,6 +100,7 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+    localStorage.setItem('darkTheme', 'true');
     return <RouterProvider router={router} />;
 };
 export default App;
