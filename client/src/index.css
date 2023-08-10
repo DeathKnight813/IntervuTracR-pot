@@ -152,7 +152,7 @@ h5 {
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 5rem);
+  font-size: clamp(2rem, 5vw, 4.5rem);
   /* Large heading */
 }
 
@@ -520,8 +520,43 @@ button:disabled {
   border-radius: 100vh;
 
   background: linear-gradient(180deg, var(--dark-color-500) 0%, white 100%);
-  filter: blur(300px);
+  filter: blur(350px);
 
   transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.dark-theme .hero-img-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10%;
+
+  height: 100%;
+  width: 120%;
+  border-radius: 100vh;
+
+  transform: translateY(-50%);
+  background-color: white;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  filter: blur(150px);
+
+  z-index: -1;
+}
+
+.dark-theme .hero-img-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  height: 70%;
+  width: 70%;
+  border-radius: 100vh;
+
+  transform: translate(-50%, -50%);
+  background-color: white;
+  filter: blur(250px);
+
   z-index: -1;
 }

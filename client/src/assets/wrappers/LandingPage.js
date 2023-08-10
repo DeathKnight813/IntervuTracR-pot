@@ -34,10 +34,12 @@ const Wrapper = styled.section`
     }
 
     p {
-        line-height: 1.6;
         color: var(--text-secondary-color);
         margin-bottom: 1.5rem;
         max-width: 35em;
+
+        line-height: 1.6;
+        letter-spacing: 0.5px;
     }
 
     .btn-container {
@@ -64,11 +66,14 @@ const Wrapper = styled.section`
 
     @media (min-width: 992px) {
         .page {
-            grid-template-columns: 1fr 400px;
+            grid-template-columns: 1fr 550px;
             column-gap: 3rem;
         }
         .main-img {
             display: block;
+        }
+        .hero-img-container {
+            position: relative;
         }
     }
 `;

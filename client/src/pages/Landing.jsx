@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link, useNavigate } from 'react-router-dom';
 
-import main from '../assets/images/main.svg';
+// import main from '../assets/images/main.svg';
+import main from '../assets/images/custom-hero-image.svg';
 import Wrapper from '../assets/wrappers/LandingPage';
 import { Logo } from '../components';
 import customFetch from '../utils/customFetch';
@@ -66,7 +67,9 @@ const Landing = () => {
                         </Link>
                     </div>
                 </div>
-                <img src={main} alt="job hunt" className="img main-img" />
+                <div className='hero-img-container'>
+                    <img src={main} alt="job hunt" className="img main-img" />
+                </div>
             </div>
         </Wrapper>
     );
