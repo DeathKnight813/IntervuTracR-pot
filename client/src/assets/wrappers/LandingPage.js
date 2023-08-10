@@ -66,7 +66,7 @@ const Wrapper = styled.section`
 
     @media (min-width: 992px) {
         .page {
-            grid-template-columns: 1fr 550px;
+            grid-template-columns: 1fr 600px;
             column-gap: 3rem;
         }
         .main-img {
